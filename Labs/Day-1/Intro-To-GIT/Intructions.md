@@ -3,27 +3,59 @@
 ## What will you learn ?
 
 - Import a code from a seperate repository by using forking.  
+- Cloning a repository. 
 - Create a branch in your newly created repository.
 - Commit Code to the newly created branch.
 - Create a pull request to merge changes into the main branch.
 
+
+
 # Tasks
 
-### Forking a repository 
+### 1. Forking a repository 
 
 1. Navigate to my repository by clicking the following link
-    - 
+    - https://github.com/jdaloia1/DevOps-Training
+
+2. Select "Fork" in the top right handside of the screen.
+    - Then select "Create a new Fork"
+
+3. Give your a repository a name (or keep the original).
+
+4. Select "Create fork" at the bottom 
 
 
-### GitHub Pro
+#
 
+### 2.Cloning the Repository 
 
-### GitHub Team
+1. In your repository select "Code" in the green box.
+    a. Copy the HTTPS URL.
 
+2. Navigate now to visual studio code.
 
+3. Once in Visual Studio Code run the following short cut "CTRL SHIFT G"
+    - This will bring up the GIT extension, then select "Clone a repostiory"
 
-### GitHub Enterprise
+4. Paste the URL into the box that is asking for the URL 
+     - Then select "Clone from Git Hub"
 
+5. Now select a folder on your workstation to clone the code too, (Make sure it is in a suitbale location i.e. not on the root of the C Drive)
 
-## Accounts
+The repostory is now cloned and be accessed using the Visual Studio Code
+
+#
+
+### 3.Creating a branch 
+
+In this section you will learn how to create a branch. Branching is an important Development process to know as 99.999% of the time you will be required to use Branches 
+
+1. On the bottom right hand side of your screen you will see a repo logo and the word "main" Select this
+
+2. A box at the top of the screen will appear select "+ Create New Branch From"
+        - Give your new branch a name
+        - Then select "main"
+
+3. You will now notice that the branch name on the bottom right hand corner has now changed from "main" to branch name that you have provided.
+
 
