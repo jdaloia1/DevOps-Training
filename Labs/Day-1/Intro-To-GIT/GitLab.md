@@ -79,6 +79,8 @@ In this section you will learn how to commit a code change to your branch.
 
 5. Enter a commit message explaining why the change has been commited, and then select the "tick" box to commit.
 
-6.
+6. You may be presented with a message "there are no staged items to commit", select "Yes" to this.
+
+7. Press sync changes and this will now sync the code change with the remote repository.
 
 
