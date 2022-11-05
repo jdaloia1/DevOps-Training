@@ -1,4 +1,4 @@
-# Lesson 1 - Intro To Git
+# Lab 1 - Intro To Git
 
 ## What will you learn ?
 
@@ -57,5 +57,28 @@ In this section you will learn how to create a branch. Branching is an important
         - Then select "main"
 
 3. You will now notice that the branch name on the bottom right hand corner has now changed from "main" to branch name that you have provided.
+
+
+You are now able to work in this branch and commit code.
+
+#
+
+### 4. Commit Code Changes
+
+In this section you will learn how to commit a code change to your branch.
+
+
+1. Navigate to the "Sandbox" folder on the root of the folder structure.
+
+2. There you will find a file called "GitLab1.txt" 
+
+3. In this file enter free text in order for the a change to be detected.
+    a. Once a change has been made click "ctrl s" to save the file.
+
+4. Once the file has been saved click "ctrl shft g" this will show the changed file and allow you to commit.
+
+5. Enter a commit message explaining why the change has been commited, and then select the "tick" box to commit.
+
+6.
 
 
