@@ -93,8 +93,21 @@ In this section you will learn how to create a Pull Request, a pull request allo
 
 1. Navigate to the Git Hub (online) page where you can see the folder structure of the repository.
 
-2. Select "Pull requests" from the options (inbetween "Issues" and "Actions")
+2. Select "Pull requests" from the options (inbetween "Issues" and "Actions").
 
-3. Now select "New pull request"
+3. Now select "New pull request".
 
-4. Change the "compare" branch to be the new branch that you have created.
+4. Change the "compare" branch to be the new branch that you have created. and make sure taht the base branch is "main".
+
+5. You will be able to to see the change between the files, ensure you are happy with the cnahge and select "Create pull request".
+
+6. Leave a description on your pull request.
+
+7. Now click "Create pull request".
+
+8. Merge the pull request and now the code change will be merged back into the main branch.
+
+#
+#
+
+# THIS IS THE END OF THE Git Lab, Well Done !
