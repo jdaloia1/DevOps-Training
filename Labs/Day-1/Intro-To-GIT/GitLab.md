@@ -84,3 +84,15 @@ In this section you will learn how to commit a code change to your branch.
 7. Press sync changes and this will now sync the code change with the remote repository.
 
 
+
+#
+
+### 5. Creating a Pull Request (PR)
+
+In this section you will learn how to create a Pull Request, a pull request allows you to merge your code changes in to another branch thus allowing code to collaborate code with your peers.
+
+1. Navigate to the Git Hub (online) page where you can see the folder structure of the repository.
+
+2. Select "Pull requests" from the options (inbetween "Issues" and "Actions")
+
+3. Now select "New pull request"
