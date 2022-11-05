@@ -81,7 +81,7 @@ In this section you will learn how to commit a code change to your branch.
 
 6. You may be presented with a message "there are no staged items to commit", select "Yes" to this.
 
-7. Press sync changes and this will now sync the code change with the remote repository.
+7. Press sync changes (or publish branch) and this will now sync the code change with the remote repository.
 
 
 
@@ -96,3 +96,5 @@ In this section you will learn how to create a Pull Request, a pull request allo
 2. Select "Pull requests" from the options (inbetween "Issues" and "Actions")
 
 3. Now select "New pull request"
+
+4. Change the "compare" branch to be the new branch that you have created.
