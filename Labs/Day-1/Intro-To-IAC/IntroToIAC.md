@@ -2,10 +2,10 @@
 
 ## What will you learn ?
 
-- Creating the right folder structure for your IAC templates.
-- Create a Storage Account. 
+- Creating the right folder structure for your BICEP IAC templates.
+- Create a Storage Account template. 
 - Create a Data Factory template
-- Deploy template to Azure Resource Group
+- Deploy BICEP templates to Azure Resource Group
 
 
 # Tasks

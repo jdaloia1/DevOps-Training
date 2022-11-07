@@ -1,7 +1,13 @@
+param storageAccountName string
+param storageAccountSKU  string
+param deploymentLocation string
+param storageAccountKind string
 
-
-resource dataFactory 'Microsoft.DataFactory/factories@2018-06-01' =  {
-  name: 'adftestdev01'
-  location:'uksouth'
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
+  name: 'storageName'
+  location: 'uk south'
+  sku: {
+    name: 'Standard_LRS'
+  }
+  kind: 'StorageV2'
 }
-
