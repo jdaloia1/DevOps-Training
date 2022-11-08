@@ -1,0 +1,48 @@
+trigger:
+  branches:
+    include:
+      - "develop"
+      - "main"
+stages:
+  - stage: BUILD
+    jobs:
+      - job: "PublishArtifact"
+        displayName: Build BICEP Templates
+        pool:
+          vmImage: "ubuntu-latest"
+        steps:
+          - publish: Sandbox
+            displayName: "Publish Artifact"
+            artifact: bicepDeployment
+
+  - stage: DEV
+    dependsOn: [BUILD]
+    jobs:
+      - deployment: "DeployBicep"
+        displayName: "Deploy Bicep Infrastructure"
+        pool:
+          vmImage: "windows-latest"
+        variables:
+          - group: "south-coast-dev"
+        environment: "DEV"
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - download: current
+                  displayName: Download Bicep Templates
+                  artifact: "bicepDeployment"
+
+                - task: AzureCLI@2
+                  displayName: "Deploy Bicep Template"
+                  inputs:
+                    azureSubscription: "South Coast Summit - Dev"
+                    scriptType: bash
+                    scriptLocation: inlineScript
+                    inlineScript: |
+                      az --version 
+                      az deployment group create \
+                      --name DeployStorageAccount \
+                      --resource-group "$(resourceGroup)" \
+                      --template-file '$(Pipeline.Workspace)/bicepDeployment/bicep/deployment/main.bicep' \
+                      --parameters storageAccountName='$(storageName)' deploymentLocation="uk south" storageAccountKind='$(storageAccountKind)' storageAccountSku='$(storageAccountSku)' keyVaultName='$(keyVaultName)'
