@@ -84,6 +84,10 @@ In this section you will learn how to link the YAML pipeline from the repository
 
 5. Select "Existing Azure Pipelines YAML file"
 
-6. Select the branch that your changes are in and in the "Path" container selct the drop down and the path to the yaml file should be generated.
+6. Make sure that your changes are in the "main" branch (submit a PR if required) and in the "Path" container selct the drop down and the path to the yaml file should be generated. Then select "Continue"
 
-# This is the end of the Andanced IAC Lab, Well Done !
+7. The pipeline will then appear on the screen, and then select "Run" on the top right hand corner.
+
+8. The pipeline will now run and deploy the BICEP template!
+
+# This is the end of the DevOps CI/CD Lab, Well Done !
