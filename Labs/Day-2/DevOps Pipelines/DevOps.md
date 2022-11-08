@@ -88,6 +88,6 @@ In this section you will learn how to link the YAML pipeline from the repository
 
 7. The pipeline will then appear on the screen, and then select "Run" on the top right hand corner.
 
-7. The pipeline will now run and deploy the BICEP template!
+8. The pipeline will now run and deploy the BICEP template!
 
 # This is the end of the DevOps CI/CD Lab, Well Done !
