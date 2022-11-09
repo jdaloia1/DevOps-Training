@@ -11,7 +11,7 @@
 
 ### 1. Creating parameters. 
 
-In this section you will learn how to create a parameters for your IAC templates, this will make them scalable and re-usuable in the real world environment.
+In this section you will learn how to create parameters for your IAC templates, this will make them scalable and re-usable in the real world environment.
 
 1. Navigate to your "storage-account.bicep" file, and write the following code on line 1:
     - param storageAccountName string 
@@ -38,10 +38,10 @@ In this section you will learn how to create a parameters for your IAC templates
 
 2. Create a file called "main.bicep" 
 
-3. In the empty file write the following "module storageAccount '../templates/storage-account.bicep' = 
+3. In the empty file write the following: "module storageAccount '../templates/storage-account.bicep' = 
 - After you have written the "=" you should see an option in your VS code window to provide the "required properties" select this and this will generate the parameter mapping for the parameters you created in the storageAccount template.
 
-4. Just as you create the parameters for the Storage Account template, please create the same parameters in the "main.bicep" file.
+4. Just as you created the parameters for the Storage Account template, please create the same parameters in the "main.bicep" file.
 
 5. Please now map the newly created parmeters to the module.
 
@@ -63,13 +63,13 @@ One of these conditions is called "depends on"
 
 3. This will allow you to pass in array of items to make the Data Factory deployment dependant on.
 
-4. Remove the dependancy condition that was just created.
+4. Remove the dependency condition that was just created.
 
 5. Create a new parameter called deployDataFactory and make this a data type "bool" and add a hard code reference "false"
 - It should look like the following "param deployDataFactory bool = false".
 
 6. On the line where the Data Factory module has been delcared after the "=" add the following code "if(deployDataFactory)"
-- The whole line should look something like this module dataFactory '../../../Demos/data-factory.bicep'   = if(deployDataFactory)   { 
+- The whole line should look something like this module dataFactory '../../../Sandbox/data-factory.bicep'   = if(deployDataFactory)   { 
 
 
 #

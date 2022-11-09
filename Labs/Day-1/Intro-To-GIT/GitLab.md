@@ -35,14 +35,14 @@
 2. Navigate now to visual studio code.
 
 3. Once in Visual Studio Code run the following short cut "CTRL SHIFT G"
-    - This will bring up the GIT extension, then select "Clone a repostiory"
+    - This will bring up the GIT extension, then select "Clone a repostiory". You can also click the three dots at the top of the source control panel and select "clone" from the drop down menu
 
 4. Paste the URL into the box that is asking for the URL 
      - Then select "Clone from Git Hub"
 
-5. Now select a folder on your workstation to clone the code too, (Make sure it is in a suitbale location i.e. not on the root of the C Drive)
+5. Now select a folder on your PC to clone the code too, (Make sure it is in a suitbale location i.e. not on the root of the C Drive)
 
-The repostory is now cloned and be accessed using the Visual Studio Code
+The repository is now cloned and be accessed using the Visual Studio Code
 
 #
 
@@ -50,7 +50,7 @@ The repostory is now cloned and be accessed using the Visual Studio Code
 
 In this section you will learn how to create a branch. Branching is an important Development process to know as 99.999% of the time you will be required to use Branches 
 
-1. On the bottom right hand side of your screen you will see a repo logo and the word "main" Select this
+1. On the bottom left hand side of your screen you will see a repo logo and the word "main" Select this
 
 2. A box at the top of the screen will appear select "+ Create New Branch From"
         - Give your new branch a name
@@ -93,13 +93,13 @@ In this section you will learn how to create a Pull Request, a pull request allo
 
 1. Navigate to the Git Hub (online) page where you can see the folder structure of the repository.
 
-2. Select "Pull requests" from the options (inbetween "Issues" and "Actions").
+2. Select "Pull requests" from the options (inbetween "Code" and "Actions").
 
 3. Now select "New pull request".
 
-4. Change the "compare" branch to be the new branch that you have created. and make sure taht the base branch is "main".
+4. Change the "compare" branch to be the new branch that you have created. and make sure that the base branch is "main".
 
-5. You will be able to to see the change between the files, ensure you are happy with the cnahge and select "Create pull request".
+5. You will be able to see the change between the files, ensure you are happy with the change and select "Create pull request".
 
 6. Leave a description on your pull request.
 
