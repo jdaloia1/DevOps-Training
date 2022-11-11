@@ -12,7 +12,7 @@
 
 ### 1. Creating a Service Connection 
 
-In this section you will create a service connection will be used for serving the connection between DevOps and the Azure Subscription.
+In this section you will create a service connection that will be used for serving the connection between DevOps and the Azure Subscription.
 
 1. In DevOps, navigate to "Project Settings" in the bottom left hand corner of the screen.
 
@@ -21,7 +21,7 @@ In this section you will create a service connection will be used for serving th
 3. Select "New service connection" 
 - Then select "Azure Resource Manager"
 - Select "Next"
-- Then Select "Service principal (manual)"
+- Then select "Service principal (manual)"
 
 
 4. Fill in the following required details:
@@ -43,9 +43,9 @@ In this section you will create an Environment in DevOps which is used to manage
 
 2. Now select "Environments". 
 
-3. Select "New environment" at the top left.
+3. Select "New environment" at the top left. Or "create environment" in the centre if it's your first time making one 
 
-4. In the name box provide "DEV" and make sure the Resource is set to "None" and the hit "Create".
+4. In the name box provide "DEV" and make sure the Resource is set to "None" and then hit "Create".
 
 # 
 
@@ -58,7 +58,7 @@ In this section you will learn how to create and set up variables groups.
 2. Select "+ Variable Group"
 - In the "Variable group name" provide the name "DEV"
 
-3. Now the parameters can be created by select the "+ Add" icon at the bottom.
+3. Now the parameters can be created by selecting the "+ Add" icon at the bottom.
 
 4. Provide a parameter for every paramater that was called in the "main.bicep" file.
 - As an example in the main.bicep file there is a paramter called "deploymentLocation", in the variable group create a variable called "deploymentLocation and provide the value as "uk south".
@@ -76,15 +76,15 @@ In this section you will learn how to link the YAML pipeline from the repository
 
 1. Staying in the "Pipelines" section in DevOps, now navigate to the "Pipelines" tab.
 
-2. Select "New pipeline" in the top right section.
+2. Select "New pipeline" in the top right section. May be in the centre of your screen if it's your first time creating one
 
 3. Select "GitHub" and provide your GitHub details
 
-4. Approve any authentication requsts.
+4. Approve any authentication requests.
 
 5. Select "Existing Azure Pipelines YAML file"
 
-6. Make sure that your changes are in the "main" branch (submit a PR if required) and in the "Path" container selct the drop down and the path to the yaml file should be generated. Then select "Continue"
+6. Make sure that your changes are in the "main" branch (submit a Pull Request if required) and in the "Path" container select the drop down and the path to the yaml file should be generated. Then select "Continue"
 
 7. The pipeline will then appear on the screen, and then select "Run" on the top right hand corner.
 
