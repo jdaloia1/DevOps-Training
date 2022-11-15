@@ -31,6 +31,8 @@ In this section you will create a service connection that will be used for servi
 - Service Principal key
 - Tenant Id
 
+(The Service Principal Id, Service Principal Key and the TenantId values can be found in the Key Vault in your resource group. )
+
 5. Verify the connection and provide the name "DevOps" in the service connection name.
 
 #
