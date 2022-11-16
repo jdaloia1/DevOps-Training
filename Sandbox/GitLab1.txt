@@ -1,0 +1,4 @@
+Open ARMTemplateForFactory - change all parameters from dev to prod
+get Existing Cluster ID
+change keyvault url
+check for any other env specific params
