@@ -1,4 +1,4 @@
-# Lab 2 - Intro To Infrastructure As Code (IAC)
+# Lab 2 - Intro To DevOps Pipelines
 
 ## What will you learn ?
 
