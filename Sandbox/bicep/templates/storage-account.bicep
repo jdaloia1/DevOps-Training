@@ -1,8 +1,12 @@
+param storageAccountName string = 'vivek0909813'
+param storageAccountKind string = 'standard_LRS'
+param deploymentLocation string = 'uk south'
+param storageAccountSKU string = 'storageV2'
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01'= {
-  name: 'vivek090981'
-  location: 'uksouth'
+  name: storageAccountName
+  location: deploymentLocation
   sku: {
-    name:'Standard_LRS' 
+    name: storageAccountSKU
   }
-  kind: 'StorageV2'
+  kind: storageAccountKind
 }
