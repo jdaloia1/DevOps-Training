@@ -1,4 +1,4 @@
-# Lab 1 - Intro To Git
+# Lab 1 - Intro To DevOps
 
 ## What will you learn ?
 
