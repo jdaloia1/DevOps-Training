@@ -1,5 +1,5 @@
 //storage account parameters
-param location string 
+param deploymentLocation string 
 param storageAccountName string
 param storageAccountSKU string
 param storageAccountKind string
@@ -11,7 +11,7 @@ param deployDataFactory bool
 module storageAccount '../templates/storage-account.bicep'= {
   name: 'storageAccount'
   params: {
-    location: location
+    location: deploymentLocation
     storageAccountKind: storageAccountKind
     storageAccountName: storageAccountName
     storageAccountSKU: storageAccountSKU
@@ -22,7 +22,7 @@ module dataFactory '../templates/data-factory.bicep'= if(deployDataFactory) {
   name: 'dataFactory'
   params: {
     dataFactoryName: dataFactoryName
-    location: location
+    location: deploymentLocation
   }
   dependsOn: [storageAccount]
 }
