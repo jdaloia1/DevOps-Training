@@ -8,7 +8,7 @@ param storageAccountKind string
 
 param dataFactoryName string
 
-param deployDataFactory bool = false
+param deployDataFactory bool = true
 
 module storageAccount '../templates/storage-account.bicep' = {
   name: storageAccountName
