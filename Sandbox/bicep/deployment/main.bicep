@@ -1,19 +1,29 @@
+param storageAccountName string
 
-param location string = 'uk south'
+param deploymentLocation string
+
+param storageAccountSKU string
+
+param storageAccountKind string
+
+param dataFactoryName string
+
+param deployDataFactory bool = true
 
 module storageAccount '../templates/storage-account.bicep' = {
-  name: 'storageAccount'
+  name: storageAccountName
   params: {
-    storageAccountName: 'tobystorageaccount'
-    location: location
+    deploymentLocation: deploymentLocation
+    storageAccountKind: storageAccountKind
+    storageAccountName: storageAccountName
+    storageAccountSKU: storageAccountSKU
   }
 }
 
-module dataFactory '../templates/data-factory.bicep' = {
-  name: 'dataFactory'
+module dataFactory '../templates/data-factory.bicep' = if (deployDataFactory) {
+  name: dataFactoryName
   params: {
-    dataFactoryName: 'tobysdatafactory'
-    location: location
+    dataFactoryName: dataFactoryName
+    deploymentLocation: deploymentLocation
   }
-  dependsOn: [storageAccount]
 }
