@@ -44,5 +44,5 @@ stages:
                       az deployment group create \
                       --name DeployStorageAccount \
                       --resource-group "$(resourceGroup)" \
-                      --template-file '$(Pipeline.Workspace)/bicepDeployment/SandBox/bicep/deployment/main.bicep' \
+                      --template-file '$(Pipeline.Workspace)/bicepDeployment/bicep/deployment/main.bicep' \
                       --parameters storageAccountName='$(storageName)' deploymentLocation="uk south" storageAccountKind='$(storageAccountKind)' storageAccountSKU='$(storageAccountSKU)' dataFactoryName='$(dataFactoryName)'
