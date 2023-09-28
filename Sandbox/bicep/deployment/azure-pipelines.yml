@@ -36,7 +36,7 @@ stages:
                 - task: AzureCLI@2
                   displayName: "Deploy Bicep Template"
                   inputs:
-                    azureSubscription: "DevOps"
+                    azureSubscription: "DEV"
                     scriptType: bash
                     scriptLocation: inlineScript
                     inlineScript: |
@@ -45,4 +45,4 @@ stages:
                       --name DeployStorageAccount \
                       --resource-group "$(resourceGroup)" \
                       --template-file '$(Pipeline.Workspace)/bicepDeployment/bicep/deployment/main.bicep' \
-                      --parameters storageAccountName='$(storageName)' deploymentLocation="uk south" storageAccountKind='$(storageAccountKind)' storageAccountSku='$(storageAccountSku)' keyVaultName='$(keyVaultName)'
+                      --parameters storageAccountName='$(storageAccountName)' deploymentLocation='uk south' storageAccountKind='$(storageAccountKind)' storageAccountSKU='$(storageAccountSKU)' dataFactoryName='$(dataFactoryName)' deployDataFactory='$(deployDataFactory)'
