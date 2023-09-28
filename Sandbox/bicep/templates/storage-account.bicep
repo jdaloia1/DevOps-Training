@@ -1,8 +1,13 @@
+param storageAccountName string
+param storageAccountSKU string
+param deploymentLocation string
+param storageAccountKind string
+
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
-  name: 'hassanstorage46318'
-  location: 'uk south'
+  name: storageAccountName
+  location: deploymentLocation
   sku: {
-    name: 'Standard_LRS'
+    name: storageAccountSKU
   }
-  kind: 'StorageV2'
+  kind: storageAccountKind
 }
