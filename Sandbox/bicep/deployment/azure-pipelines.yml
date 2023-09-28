@@ -45,4 +45,4 @@ stages:
                       --name DeployStorageAccount \
                       --resource-group "$(resourceGroup)" \
                       --template-file '$(Pipeline.Workspace)/bicepDeployment/bicep/deployment/main.bicep' \
-                      --parameters storageAccountName='$(storageName)' deploymentLocation="uk south" storageAccountKind='$(storageAccountKind)' storageAccountSku='$(storageAccountSku)' keyVaultName='$(keyVaultName)'
+                      --parameters storageAccountName='$(storageName)' deploymentLocation="uk south" storageAccountKind='$(storageAccountKind)' storageAccountSKU='$(storageAccountSku)' keyVaultName='$(keyVaultName)'
