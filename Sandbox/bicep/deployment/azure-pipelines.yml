@@ -36,7 +36,7 @@ stages:
                 - task: AzureCLI@2
                   displayName: "Deploy Bicep Template"
                   inputs:
-                    azureSubscription: "JD-Sandbox"
+                    azureSubscription: "DEV"
                     scriptType: bash
                     scriptLocation: inlineScript
                     inlineScript: |
