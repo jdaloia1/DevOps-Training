@@ -3,8 +3,10 @@ param storageAccountSKU  string
 param deploymentLocation string
 param storageAccountKind string
 
-param deployDataFactory bool
+param deployDataFactory bool = false
 param dataFactoryName string 
+
+
 module storageAccount '../../../Demos/storage-account.bicep' = {
   name: 'storageAccount'
   params: {
@@ -14,7 +16,6 @@ module storageAccount '../../../Demos/storage-account.bicep' = {
     storageAccountSKU: storageAccountSKU
   }
 }
-
 
 module dataFactory '../../../Demos/data-factory.bicep'   = if(deployDataFactory)   { 
   name: 'dataFactory'
